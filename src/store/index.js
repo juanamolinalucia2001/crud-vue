@@ -5,13 +5,19 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-  },
-  getters: {
+    loading:{
+      titulo:'',
+      estado:false,
+    }
   },
   mutations: {
-  },
-  actions: {
-  },
-  modules: {
+    mostrarLoading(state, payload){
+      state.loading.titulo = payload.titulo
+      state.loading.estado = true
+    },
+    ocultarLoading(state){
+      state.loading.estado = false
+    }
   }
 })
+

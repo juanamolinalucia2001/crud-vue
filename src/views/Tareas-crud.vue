@@ -9,14 +9,14 @@
                 <v-card class="mb-3" v-for="(item, index) in listaTareas" :key="index"> 
                     <v-card-text>
                        
-                        <v-chip class="ma-2 ml-0" color="pink" label text-color="white">
+                        <v-chip class="ma-2 ml-0 mb-6" color="pink" label text-color="white">
                              <v-icon left>mdi-label</v-icon>
                             {{item.titulo}}
                         </v-chip>
                         <p>{{item.descripcion}}</p>
                         <v-row  align="center" justify="space-around">
-                        <v-btn color="warning" class="ml-0" @click="editar(index)">Editar</v-btn>
-                        <v-btn color="error" @click="eliminarTarea(item.id)">Eliminar</v-btn>
+                        <v-btn color="warning" class="mt-6 mb-3" @click="editar(index)">Editar</v-btn>
+                        <v-btn color="error" class="mt-6 mb-3" @click="eliminarTarea(item.id)">Eliminar</v-btn>
                         </v-row>
                     </v-card-text>
                 </v-card>
