@@ -1,6 +1,6 @@
 <template>
 <v-card
-  max-width="450"
+  max-width="900"
   class="mx-auto"
 >
   <v-carousel v-model="model" class="mt-10" >

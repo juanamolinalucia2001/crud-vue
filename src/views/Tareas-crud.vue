@@ -1,7 +1,5 @@
 <template>
 <v-app>
-
-
     <v-container grid-list-xl>
         <v-layout row wrap>
 

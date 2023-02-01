@@ -16,26 +16,26 @@
     </v-card>
 
      <v-navigation-drawer
-      v-model="drawer" temporary app>
-      <v-list-item class="px-2">
-        <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
+      v-model="drawer" temporary app align="center" justify="center">
+      <v-list-item center>
+        <v-list-item-avatar class="ml-auto mr-auto mt-10">
+          <v-img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" ></v-img>
         </v-list-item-avatar>
 
-        <v-list-item-title>John Leider</v-list-item-title>
-
-
+      </v-list-item>
+      <v-list-item>
+        <v-list-item-title class="text-h5">John Leider</v-list-item-title>
       </v-list-item>
 
       <v-divider></v-divider>
 
-      <v-list dense>
-         <v-list-item-content>
-            <v-btn color="deep-purple " dark :to="{name:'home'}">Home</v-btn>
+      <v-list class="flex-colum-center">
+         <v-list-item-content class="mr-10 ml-10">
+            <v-btn color="deep-purple"  dark :to="{name:'home'}">Home</v-btn>
          </v-list-item-content >
 
-         <v-list-item-content>
-            <v-btn color="deep-purple" dark :to="{name:'tareas-crud'}">Lista Tareas</v-btn>
+         <v-list-item-content class="mr-10 ml-10" >
+            <v-btn  color="deep-purple"   dark :to="{name:'tareas-crud'}">List Task</v-btn>
          </v-list-item-content>
         
       </v-list>
